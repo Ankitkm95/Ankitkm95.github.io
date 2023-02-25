@@ -18,6 +18,10 @@
 #introSection{
     display: flex;
     padding: 40px;
+    border: 0px solid black;
+    margin-top: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 15px;
 }
 #topImg{
     width: 200px;
@@ -69,6 +73,19 @@
     border-bottom: 1px solid #ccc;
     padding: 20px;
     justify-content: flex-start;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+#nav-menu a{
+    text-decoration: none;
+}
+#nav-menu a:hover {
+    font-size: 20px;
+    font-weight: bolder;
+    color: tomato;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
 }
 #home{
     margin-right: 20px;
@@ -132,6 +149,9 @@
 .skills-card:hover{
     background-color: #9CCC65;
     color: white;
+    cursor: pointer;
+    border: 2px solid #607D8B;
+    border-radius: 0px 15px 0px 15px;
 }
 .logoDiv{
    border: 0px solid red;
@@ -206,6 +226,9 @@
     cursor: pointer;
     font-size: 18px;
 }
+.GithubBtn:hover{
+    background-color: #4FC3F7;
+}
 .NetlifyBtn{
     background-color: #2196F3;
     color: white;
@@ -214,6 +237,9 @@
     border-radius: 7px;
     cursor: pointer;
     font-size: 18px;
+}
+.NetlifyBtn:hover{
+    background-color: #AED581;
 }
 #GithubStats{
     font-size: 55px;
@@ -304,3 +330,99 @@
     background-color: #90A4AE;
     color: white;
 }
+@media screen and (min-width: 651px) and (max-width: 1024px) {
+    #skillContainer{
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+    }
+    #ProjectContainer{
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+    }
+    .insideProjectCardDiv{
+        flex-wrap: wrap;
+    }
+    #introSection{
+        flex-wrap: wrap;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        border-radius: 12px;
+        margin-top: 25px;
+    }
+    #introduction{
+        width: 80%;
+        margin: auto;
+    }
+    #ntroImg{
+        width: 80%;
+        margin: auto;
+    }
+    #formDiv{
+        width: 75%;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 650px) {
+    #skillContainer{
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+    }
+    #ProjectContainer{
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+    }
+    .insideProjectCardDiv{
+        flex-wrap: wrap;
+    }
+    #introSection{
+        flex-wrap: wrap;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        border-radius: 12px;
+        margin-top: 25px;
+    }
+    #introduction{
+        width: 95%;
+        margin: auto;
+    }
+    #ntroImg{
+        width: 95%;
+        margin: auto;
+    }
+    #GithubStatsDiv{
+        display: block;
+        width: 100%;
+    }
+    #GithubStatsTwo{
+       grid-template-columns: repeat(1, 1fr);
+       width: 100%;
+    }
+    #formDiv{
+        width: 98%;
+    }
+  }
+
+  @media screen and (min-width: 120px) and (max-width: 319px) {
+    #skillContainer{
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+    #ProjectContainer{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .insideProjectCardDiv{
+        flex-wrap: wrap;
+    }
+    #introSection{
+        flex-wrap: wrap;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        border-radius: 12px;
+        margin-top: 25px;
+    }
+    #introduction{
+        width: 100%;
+        margin: auto;
+    }
+    #ntroImg{
+        width: 100%;
+        margin: auto;
+    }
+  }
