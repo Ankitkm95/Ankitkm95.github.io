@@ -161,11 +161,11 @@ section .title::after{
     filter: brightness(90%);
 }
 
-
+/* https://embetronicx.com/wp-content/uploads/2017/08/background.jpg */
 /* home section styling */
 .homees{
     display: flex;
-    background: url("https://embetronicx.com/wp-content/uploads/2017/08/background.jpg") no-repeat center;
+    background: url("https://t3.ftcdn.net/jpg/04/57/93/78/360_F_457937822_6guyVRMr4cCdCr36zPg7Er7WRaf0FbSn.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
