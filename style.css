@@ -555,6 +555,11 @@ footer span a:hover{
     text-decoration: underline;
 }
 
+/* myCSS */
+#mycss{
+    height: 575px;
+}
+
 
 /* responsive media query start */
 @media (max-width: 1104px) {
